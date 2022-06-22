@@ -11,7 +11,7 @@ class Passenger extends Model
 
     public function User()
     {
-       return $this->belongsToMany('App\User','passenger_trip');
+       return $this->belongsTo('App\User','customer_id','id');
     }
 
     public function Trip()
